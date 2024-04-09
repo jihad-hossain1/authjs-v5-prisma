@@ -3,7 +3,7 @@ import { User } from "./../../../../helpers/types/types";
 export async function getUser(id: string | undefined | null) {
   try {
     const response = await fetch(
-      `http://localhost:3000/api/backend/users/${id}`,
+      `${process.env.URL}/api/backend/users/${id}`,
       {
         next: { tags: ["user"] },
       }
