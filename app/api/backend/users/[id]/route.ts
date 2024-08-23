@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import prisma from "@/prisma";
 import { findUser } from "@/helpers/findUser";
-import { error } from "console";
+// import { error } from "console";
 
 export async function DELETE(
   req: NextRequest,
